@@ -1,0 +1,44 @@
+    
+section {
+    background-color: #88c1d0;
+    width: 20rem;
+    height: 11rem;
+}
+
+.test {
+    display: flex;
+    gap: 2rem;
+}
+
+
+@media screen and (min-width: 1600px) {    
+
+    .test {
+        display: flex;
+        gap: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+   .test {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+   }
+}
+
+@media screen and (max-width: 767px) {
+   
+    .test {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section {
+        width: 12rem;
+        height: 8rem;
+    }
+}
